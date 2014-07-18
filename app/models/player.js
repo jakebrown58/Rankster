@@ -21,3 +21,5 @@ var Player = DS.Model.extend({
 
   // isActive: DS.attr('bool')
 });
+
+export default Player;
