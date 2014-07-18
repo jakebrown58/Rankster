@@ -13,7 +13,9 @@ export default Ember.ArrayController.extend({
       var record = store.createRecord('player', {
 
         name: this.get('name'),
-        email: this.get('email')
+        email: this.get('email'),
+        wins: 0,
+        losses: 0
 
       });
       
