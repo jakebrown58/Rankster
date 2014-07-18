@@ -21,16 +21,3 @@ var Player = DS.Model.extend({
 
   // isActive: DS.attr('bool')
 });
-
-Player.reopenClass({
-    FIXTURES: [
-        {
-            id: 1,
-            name: 'Mike'
-        },
-        {
-            id: 2,
-            name: 'Craig'
-        }
-    ]
-});
