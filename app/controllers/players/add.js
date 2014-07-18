@@ -9,8 +9,8 @@ export default Ember.Controller.extend({
      */
     add: function() {
 
-      var store = this.get('store');
-
+      var self = this, 
+        store = this.get('store');
       store.createRecord('player', {
 
         name: this.get('name'),
@@ -18,6 +18,7 @@ export default Ember.Controller.extend({
 
       });
 
+      self.transitionTo('index');
     }
   }
 });
