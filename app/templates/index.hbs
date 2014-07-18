@@ -1,5 +1,10 @@
-
-<h1>Rankings</h1>
+<header class="clearfix">
+  <h1 class="pull-left">Current Rankings</h1>
+  <div class="actions pull-right">
+    {{#link-to 'players.add' class="btn btn-default"}}Add a player{{/link-to}}
+    {{#link-to 'match' class="btn btn-primary"}}Log a match{{/link-to}}
+  </div>
+</header>
 
 <ol>
     {{#each player}}
@@ -13,42 +18,18 @@
             <th>#</th>
             <th>Name</th>
             <th>Wins</th>
-            <th>Loses</th>
+            <th>Losses</th>
             <th>Withdraws</th>
             <th>Matches</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>1</td>
-            <td>Mike</td>
-            <td>1337</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1337</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Mike</td>
-            <td>1337</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1337</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Mike</td>
-            <td>1337</td>
-            <td>0</td>
-            <td>0</td>
-            <td>1337</td>
-        </tr>
         {{#each content}}
             <tr>
                 <td>{{rank}}</td>
                 <td>{{name}}</td>
                 <td>{{wins}}</td>
-                <td>{{loses}}</td>
+                <td>{{losses}}</td>
                 <td>{{withdraws}}</td>
                 <td>{{matches}}</td>
             </tr>
@@ -56,5 +37,9 @@
     </tbody>
 </table>
 
-{{#link-to 'players.add' class="btn btn-primary"}}Add a player{{/link-to}}
-{{#link-to 'match' class="btn btn-primary"}}Log a match{{/link-to}}
+<footer>
+  <div class="actions pull-right">
+    {{#link-to 'players.add' class="btn btn-default"}}Add a player{{/link-to}}
+    {{#link-to 'match' class="btn btn-primary"}}Log a match{{/link-to}}
+  </div>
+</footer>

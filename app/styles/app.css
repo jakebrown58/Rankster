@@ -1,5 +1,11 @@
-html, body {
-  margin: 20px;
+
+/* Branding */
+
+@media(min-width: 992px) {
+  .brand {
+    position: fixed;
+    left: 24px;
+  }
 }
 
 
@@ -8,4 +14,8 @@ html, body {
 .site {
   max-width: 768px;
   margin: 0 auto;
+}
+
+.actions {
+  margin: 20px 0;
 }
