@@ -15,7 +15,8 @@ export default Ember.ArrayController.extend({
         name: this.get('name'),
         email: this.get('email'),
         wins: 0,
-        losses: 0
+        losses: 0,
+        withdraws: 0
 
       });
       
