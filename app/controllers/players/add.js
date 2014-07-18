@@ -18,7 +18,9 @@ export default Ember.Controller.extend({
 
       });
 
-      self.transitionTo('index');
+      store.save();
+
+      // self.transitionTo('index');
     }
   }
 });

@@ -20,4 +20,6 @@ var app = new EmberApp();
 app.import('vendor/bootstrap/dist/js/bootstrap.js');
 app.import('vendor/bootstrap/dist/css/bootstrap.css');
 
+app.import('vendor/emberfire/dist/emberfire.js');
+
 module.exports = app.toTree();
