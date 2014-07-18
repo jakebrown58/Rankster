@@ -10,7 +10,7 @@ export default DS.Model.extend({
   player1Score: DS.attr('number'),
   
   player2: DS.belongsTo('player'),
-  player1Withdrew: DS.belongsTo('boolean'),
+  player2Withdrew: DS.belongsTo('boolean'),
   player2Score: DS.attr('number')
 
 });
