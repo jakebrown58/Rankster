@@ -11,7 +11,5 @@ var App = Ember.Application.extend({
 });
 
 App.ApplicationAdapter = DS.FixtureAdapter;
-
 loadInitializers(App, 'rankster');
-
 export default App;

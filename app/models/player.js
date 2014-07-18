@@ -1,7 +1,7 @@
 // models/player.js
 import DS from "ember-data";
 
-export default DS.Model.extend({
+var Player = DS.Model.extend({
 
   name: DS.attr('string'),
   
@@ -19,6 +19,20 @@ export default DS.Model.extend({
 
   matches: DS.hasMany('match'),
 
-  isActive: DS.attr('boolean')
-
+  isActive: DS.attr('bool')
 });
+
+Player.reopenClass({
+    FIXTURES: [
+        {
+            id: 1,
+            name: 'Mike'
+        },
+        {
+            id: 2,
+            name: 'Craig'
+        }
+    ]
+});
+
+export default Player
