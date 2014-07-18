@@ -25,7 +25,9 @@ Running
 $ ember server
 ```
 
-Now visit your app at http://localhost:4200
+Now visit your app at http://localhost:4200, play some ping pong, and log your matches!
+
+![Can't beat Cat](public/cat-pong.gif)
 
 
 Running Tests
@@ -40,7 +42,9 @@ $ ember test --server
 Building
 --------
 
-* `ember build`
+```bash
+$ ember build
+```
 
 For more information on using ember-cli, visit [http://iamstef.net/ember-cli/](http://iamstef.net/ember-cli/).
 
