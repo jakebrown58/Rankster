@@ -2,18 +2,23 @@
   Add a player
 </h1>
 
-<label for="">
-  Name
-</label>
+<div>
+  <label for="">
+    Name
+  </label>
 
-  {{input}}
+  {{input value=name}}
+</div>
+<div>
+  <label for="">
+    Email
+  </label>
 
-<label for="">
-  Email
-</label>
+  {{input value=email}}
+</div>
 
-  {{input}}
-
-<button {{action 'add'}}>
-  Add Player
-</button>
+<div>
+  <button {{action 'add'}}>
+    Add Player
+  </button>
+</div>
