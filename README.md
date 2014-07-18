@@ -1,25 +1,53 @@
-# Rankster
+Rankster
+========
 
-This README outlines the details of collaborating on this Ember application.
+![The Rankster](public/rankster.png)
 
-## Installation
+Rankster is a ping-ping player ranking website. Or any sport.
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+http://rankster.herokuapp.com
 
-## Running
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+Installation
+------------
 
-## Running Tests
+```bash
+$ git clone http://github.com/jakebrown58/Rankster.git
+$ npm install
+$ bower install
+```
 
-* `ember test`
-* `ember test --server`
 
-## Building
+Running
+-------
+
+```bash
+$ ember server
+```
+
+Now visit your app at http://localhost:4200
+
+
+Running Tests
+-------------
+
+```bash
+$ ember test
+$ ember test --server
+```
+
+
+Building
+--------
 
 * `ember build`
 
 For more information on using ember-cli, visit [http://iamstef.net/ember-cli/](http://iamstef.net/ember-cli/).
+
+
+Deploying
+---------
+
+```bash
+$ git push heroku master
+```
