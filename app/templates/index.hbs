@@ -1,11 +1,11 @@
 
-<h1>Rankings</h1>
-
-<ol>
-    {{#each player}}
-        <li>{{name}}!</li>
-    {{/each}}
-</ol>
+<header class="clearfix">
+  <h1 class="pull-left">Current Rankings</h1>
+  <div class="actions pull-right">
+    {{#link-to 'players.add' class="btn btn-default"}}Add a player{{/link-to}}
+    {{#link-to 'match' class="btn btn-primary"}}Log a match{{/link-to}}
+  </div>
+</header>
 
 <table class="table table-striped">
     <thead>
@@ -56,5 +56,9 @@
     </tbody>
 </table>
 
-{{#link-to 'players.add' class="btn btn-primary"}}Add a player{{/link-to}}
-{{#link-to 'match' class="btn btn-primary"}}Log a match{{/link-to}}
+<footer>
+  <div class="actions pull-right">
+    {{#link-to 'players.add' class="btn btn-default"}}Add a player{{/link-to}}
+    {{#link-to 'match' class="btn btn-primary"}}Log a match{{/link-to}}
+  </div>
+</footer>
