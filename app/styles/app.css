@@ -1,3 +1,11 @@
 html, body {
   margin: 20px;
 }
+
+
+/* Index page styles */
+
+.site {
+  max-width: 768px;
+  margin: 0 auto;
+}
