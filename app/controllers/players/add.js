@@ -9,9 +9,14 @@ export default Ember.Controller.extend({
      */
     add: function() {
 
-      alert('Add!');
-      window.console.log("Add!");
-      // DS.
+      var store = this.get('store');
+
+      store.createRecord('player', {
+
+        name: this.get('name'),
+        email: this.get('email')
+
+      });
 
     }
   }

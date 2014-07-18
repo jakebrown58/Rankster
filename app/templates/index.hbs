@@ -1,6 +1,5 @@
 
-Rankings
-
+<h1>Rankings</h1>
 <pre>
           G | W | L
 1. ____
@@ -10,5 +9,12 @@ Rankings
 5. ____
 </pre>
 
+<ol>
+    {{#each player}}
+        <li>{{name}}!</li>
+    {{/each}}
+</ol>
+
 {{#link-to 'players.add' class="btn btn-primary"}}Add a player{{/link-to}}
 {{#link-to 'match' class="btn btn-primary"}}Log a match{{/link-to}}
+{{#link-to 'players' class="btn btn-primary"}}See players{{/link-to}}
