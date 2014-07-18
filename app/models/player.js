@@ -7,19 +7,19 @@ var Player = DS.Model.extend({
   
   email: DS.attr('string'),
 
-  rank: DS.attr('number'),
+  // rank: DS.attr('number'),
 
 //  gamesPlayed: DS.attr('string'), TODO this can be a computed property
 
-  wins: DS.attr('number'),
+  // wins: DS.attr('number'),
 
-  loses: DS.attr('number'),
+  // loses: DS.attr('number'),
 
-  withdraws: DS.attr('number'),
+  // withdraws: DS.attr('number'),
 
-  matches: DS.hasMany('match'),
+  // matches: DS.hasMany('match'),
 
-  isActive: DS.attr('bool')
+  // isActive: DS.attr('bool')
 });
 
 Player.reopenClass({
@@ -34,5 +34,3 @@ Player.reopenClass({
         }
     ]
 });
-
-export default Player
