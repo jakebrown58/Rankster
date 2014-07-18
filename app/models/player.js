@@ -11,9 +11,9 @@ var Player = DS.Model.extend({
 
 //  gamesPlayed: DS.attr('string'), TODO this can be a computed property
 
-  // wins: DS.attr('number'),
+   wins: DS.attr('number'),
 
-  // loses: DS.attr('number'),
+   losses: DS.attr('number'),
 
   // withdraws: DS.attr('number'),
 
