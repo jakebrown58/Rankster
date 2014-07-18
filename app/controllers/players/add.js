@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
-
+export default Ember.ArrayController.extend({
   actions: {
 
     /**
@@ -11,14 +10,16 @@ export default Ember.Controller.extend({
 
       var self = this, 
         store = this.get('store');
-      store.createRecord('player', {
+      var record = store.createRecord('player', {
 
         name: this.get('name'),
         email: this.get('email')
 
       });
-
-      self.transitionTo('index');
+      
+      record.save();
+      
+      // self.transitionTo('index');
     }
   }
 });

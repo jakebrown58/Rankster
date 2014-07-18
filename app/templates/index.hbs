@@ -1,19 +1,60 @@
 
 <h1>Rankings</h1>
-<pre>
-          G | W | L
-1. ____
-2. ____
-3. ____
-4. ____
-5. ____
-</pre>
 
 <ol>
     {{#each player}}
         <li>{{name}}!</li>
     {{/each}}
 </ol>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Wins</th>
+            <th>Loses</th>
+            <th>Withdraws</th>
+            <th>Matches</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Mike</td>
+            <td>1337</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1337</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Mike</td>
+            <td>1337</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1337</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Mike</td>
+            <td>1337</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1337</td>
+        </tr>
+        {{#each players}}
+            <tr>
+                <td>{{rank}}</td>
+                <td>{{name}}</td>
+                <td>{{wins}}</td>
+                <td>{{loses}}</td>
+                <td>{{withdraws}}</td>
+                <td>{{matches}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
 
 {{#link-to 'players.add' class="btn btn-primary"}}Add a player{{/link-to}}
 {{#link-to 'match' class="btn btn-primary"}}Log a match{{/link-to}}
