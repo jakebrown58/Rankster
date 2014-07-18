@@ -1,16 +1,13 @@
 // models/match.js
 import DS from "ember-data";
 
-export default DS.Model.extend({
-  
-  played: DS.attr('date'),
-  
-  player1: DS.belongsTo('player'),
-  // player1Withdrew: DS.attr('boolean'),
-  player1Score: DS.attr('number'),
-  
-  player2: DS.belongsTo('player'),
-  // player2Withdrew: DS.belongsTo('boolean'),
-  player2Score: DS.attr('number')
+var Match = DS.Model.extend({
 
+  played: DS.attr('string'),
+  player1: DS.attr('string'),
+  player2: DS.attr('string'),  
+  player1Score: DS.attr('number'),
+  player2Score: DS.attr('number')
 });
+
+export default Match;

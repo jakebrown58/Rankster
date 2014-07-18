@@ -1,0 +1,24 @@
+<h1>
+  Add a match
+</h1>
+
+<div>
+  <label for="">
+    Winner score
+  </label>
+
+  {{input value=player1Score}}
+</div>
+<div>
+  <label for="">
+    Loser score
+  </label>
+
+  {{input value=player2Score}}
+
+</div>
+
+<div>
+  <button type="button" class="btn btn-primary" {{action 'add'}}>Add Match</button>
+  {{#link-to 'index' class='btn btn-default'}}Back{{/link-to}}
+</div>

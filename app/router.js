@@ -11,7 +11,10 @@ Router.map(function() {
     this.route('add');
   });
 
-  this.route('match');
+  this.resource('matches', { path: '/matches' }, function() {
+    this.route('add');
+  });
+
 
 });
 
