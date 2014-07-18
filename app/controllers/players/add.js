@@ -17,7 +17,9 @@ export default Ember.ArrayController.extend({
 
       });
 
-      self.transitionTo('index');
+      store.save();
+
+      // self.transitionTo('index');
     }
   }
 });
